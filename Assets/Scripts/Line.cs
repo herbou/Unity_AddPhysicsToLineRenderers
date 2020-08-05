@@ -34,7 +34,7 @@ public class Line : MonoBehaviour {
 		lineRenderer.SetPosition ( pointsCount - 1, newPoint );
 
 		//Edge Collider
-		//Edge colliders accapt only 2 points or more (we can't create an edge with one point :D )
+		//Edge colliders accept only 2 points or more (we can't create an edge with one point :D )
 		if ( pointsCount > 1 )
 			edgeCollider.points = points.ToArray ( );
 	}
