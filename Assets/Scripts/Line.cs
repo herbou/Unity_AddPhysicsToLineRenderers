@@ -17,7 +17,7 @@ public class Line : MonoBehaviour {
 	float circleColliderRadius;
 
 	public void AddPoint ( Vector2 newPoint ) {
-		//If distance between last point and new point is less than pointsMinDistance don't nothing (return)
+		//If distance between last point and new point is less than pointsMinDistance do nothing (return)
 		if ( pointsCount >= 1 && Vector2.Distance ( newPoint, GetLastPoint ( ) ) < pointsMinDistance )
 			return;
 
